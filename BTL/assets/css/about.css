@@ -1,0 +1,363 @@
+/*************** header *****************/
+header {
+    position: fixed;
+    max-width: 1450px;
+    width: 100%;
+    z-index: 1000;
+}
+
+#menu {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.navbar {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 10px;
+}
+
+.navbar nav {
+    width: 40%;
+}
+
+.navbar nav ul {
+    float: left;
+}
+
+.navbar nav ul li{
+    display: inline-block;
+    margin-right: 34px;
+}
+
+.navbar nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--orange);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar nav ul li:hover::after {
+    width: 100%;
+}
+
+.navbar nav ul li a {
+    display: block;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.navbar nav ul li:hover a {
+    color: var(--orange);
+}
+
+.navbar nav ul li:nth-child(2) a {
+    color: var(--orange);
+}
+
+.navbar nav ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar__logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__order {
+    display: flex;
+    justify-content: end;
+    width: 40%;
+    gap: 34px;
+}
+
+.navbar__order a {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--color-title);
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--color-title);
+}
+
+.navbar__order a:hover {
+    color: var(--orange);
+    border-bottom: 1px solid var(--orange);
+}
+/*************** main *****************/
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*------------- introduction -------------*/
+.introduction {
+    padding-top: 240px;
+    margin-bottom: 200px;
+}
+
+.introduction p {
+    padding-bottom: 70px;
+    border-bottom: 0.3px solid var(--color-text);
+}
+
+/*------------- story -------------*/
+.story {
+    gap: 30px;
+    margin-bottom: 200px;
+}
+
+.story--col-1,
+.story--col-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.story--col-1 {
+    align-items: end;
+}
+
+.story--col-1 img:first-child {
+    width: 100%;
+}
+
+/*------------- vision -------------*/
+
+.vision {
+    margin-bottom: 200px;
+}
+
+.vision__title {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 60px;
+}
+
+.vision__content--col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.vision--col-1__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 34px;
+}
+
+.vision--col-1__text {
+    width: 60%;
+}
+
+.vision--col-1__text h1 {
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.vision__content--col-2 img{
+    width: 100%;
+}
+
+/*------------- chef -------------*/
+.chef {
+    margin-bottom: 200px;
+}
+
+.chef__title {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 40px;
+}
+
+.chef__content--row {
+    justify-content: center;
+}
+
+.chef__content--card {
+    text-align: center;
+}
+
+.chef__content--card img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.chef__content--card h3 {
+    font-family: var(--font-title);
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+
+.chef__content--card h4 {
+    font-family: var(--font-text);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+/*------------- reviews -------------*/
+.reviews {
+    margin-bottom: 200px;
+}
+
+.reviews__title {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 88px;
+}
+
+.reviews__content--row {
+    justify-content: center;
+}
+
+.reviews__card__guest {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 96px 20px 0;
+    border: 1px solid var(--color-text);
+}
+
+.reviews__card__guest img {
+    position: absolute;
+    top: -50px;
+    width: 96px;
+    border-radius: 50%;
+}
+
+.reviews__card__guest h5 {
+    font-family: var(--font-title);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    color: var(--color-title);
+}
+
+.reviews__card__guest span {
+    font-family: var(--font-text);
+}
+
+
+/*------------- subscribe -------------*/
+.subscribe {
+    margin-bottom: 200px;
+}
+
+.subscribe--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.subscribe--content__address {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 28px;
+    border-bottom: 0.3px solid var(--color-text);
+}
+
+.subscribe--content__address input {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+    color: var(--orange);
+    font-family: var(--font-text);
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.subscribe--content__address input::placeholder {
+    color: var(--color-text);
+    font-family: var(--font-text);
+}
+
+.subscribe--content__address input:focus::placeholder {
+    opacity: 0.4;
+}
+
+.subscribe--content__address img:hover {
+    opacity: 0.6;
+}
+
+/*************** footer *****************/
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 77px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.list span {
+    display: block;
+    color: var(--color-title);
+    font-family: var(--font-text);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app a:hover img {
+    opacity: 0.8;
+}
+
+.app__download span {
+    display: block;
+    color: var(--color-text);
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.download__img {
+    display: flex;
+    gap: 18px;
+}
+
+.list ul li {
+    margin-bottom: 16px;
+}
+
+.list ul li:hover a {
+    color: var(--orange);
+}
+
+.list ul li:last-child {
+    margin-bottom: 0;
+}
+
+.contact ul li:nth-child(2){
+    color: var(--orange);
+}
+
+.follow ul li a {
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--color-text);
+}
+
+.follow ul li:hover a {
+    border-bottom: 1px solid var(--orange);
+}
