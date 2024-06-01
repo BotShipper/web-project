@@ -1,0 +1,13 @@
+/*---------------- cart ---------------*/
+.list-cart {
+    padding: 200px 0;
+}
+
+.table {
+    color: var(--color-text);
+}
+
+.table td {
+    color: var(--color-text);   
+    background-color: #000;
+}

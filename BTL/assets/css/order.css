@@ -1,0 +1,63 @@
+/*---------------- order ---------------*/
+.order {
+    padding: 200px 0;
+}
+
+.order--col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.order--col-2 h2 {
+    font-size: 64px;
+    line-height: 74px;
+}
+
+.order--col-2 h3 {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.order__quantity {
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+}
+
+.order--col-2 table {
+    border-collapse: collapse;
+    width: fit-content;
+}
+
+.order--col-2 td {
+
+    border: 1px solid #ccc;
+}
+
+.order--col-2 button {
+    padding: 9px 14px;
+}
+
+#count {
+    padding: 9px 41px;
+}
+
+#add {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 10px 30px;
+    background: var(--orange);
+}
+
+.order--col-2 div span {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-title);
+}
+
+.back {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ccc;
+    width: fit-content;
+}
